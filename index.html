@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="selector">
+            <input type="radio" onclick="login()" name="radio" id="login" checked>
+            <label for="login">Login</label>
+            <input type="radio" onclick="Register()" name="radio" id="register">
+            <label for="register">Register</label>
+            <span></span>
+        </div>
+
+        <div id="login-form" class="form">
+            <form action="#">
+                <h1>SIGN IN</h1>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <button>LOGIN</button>
+            </form>
+        </div>
+        <div id="register-form" class="form">
+            <form action="#">
+                <h1>CREATE ACCOUNT</h1>
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password" />
+                <button>REGISTER</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
